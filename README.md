@@ -2,22 +2,26 @@
 
 내 첫 React Native 앱 만들기 프로젝트!
 
+<img width="1470" height="1418" alt="image" src="https://github.com/user-attachments/assets/cea681d1-0406-4298-ba17-7b8741fd9f09" />
+
 ## 📱 프로젝트 소개
-React Native를 처음 배우면서 만든 앱입니다.
+React Native를 처음 배우면서 만든 앱입니다.  
+이 앱은 사용자가 **위험한 상황에서 안전을 지키기 위한 기능**을 제공합니다.  
+간단한 UI와 직관적인 네비게이션으로 구성되어 있습니다.
 
 ## 🛠️ 사용 기술
 - React Native 0.82.1
 - TypeScript
 - iOS Simulator
+- Styled Components (스타일링)
+- React Navigation (화면 전환)
+
+## 🖼️ 주요 화면
+1. **가이드 화면**: 앱 소개 및 기능 안내  
+2. **프로필 화면**: 사용자 정보 입력  
+3. **안전 기능 화면**: 긴급 상황 알림 및 위치 공유
 
 ## 🚀 실행 방법
 ```bash
 npm install
 npm run ios
-```
-
-## 📝 배운 것들
-- React Native 개발 환경 셋팅
-- Xcode 및 iOS 시뮬레이터 사용
-- CocoaPods 설치
-- Git & GitHub 연동
