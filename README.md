@@ -1,4 +1,5 @@
 # 🎉 My First React Native App
+## HOMEDOT(지비닷: 일상 안전 관련 모바일 어플리케이션)
 
 내 첫 React Native 앱 만들기 프로젝트!
 
