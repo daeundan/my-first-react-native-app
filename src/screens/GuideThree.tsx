@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 import NextButton from '../components/NextButton';
 
-export default function GuideOne({ navigation }: any) {
+export default function GuideThree({ navigation }: any) {
   const [count, setCount] = useState(0);
 
   return (
@@ -13,17 +13,17 @@ export default function GuideOne({ navigation }: any) {
       />
       <View style={styles.content}>
         <Image
-          source={require('../img/guideimg01.png')}
+          source={require('../img/guideimg03.png')}
           style={styles.guideImage}
           resizeMode="contain"
         />
-        <Text style={styles.subtitle}>위험한 순간,{'\n'}당신의 안전을{'\n'}지키는 앱</Text>
+        <Text style={styles.subtitle}>위치를 기반으로{'\n'}주변 안전시설을{'\n'}안내합니다</Text>
         <Text style={styles.counterText}>
-          귀가길 자취방 긴박한 상황에서{'\n'}필요한 기능을 이용해 보세요!
+          정확한 기능을 위해{'\n'}위치 설정 동의가 필요합니다.
         </Text>
         <NextButton
           title="다음"
-          onPress={() => navigation.navigate('GuideTwo')}
+          onPress={() => navigation.navigate('GuideThree')}
         />
       </View>
     </View>
@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
   logo: {
     width: 120,
     alignSelf: 'center',
-    marginBottom: 20,
   },
   content: {
     flex: 1,
@@ -47,9 +46,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   guideImage: {
-    width: 200,
+    width: 300,
     height: 200,
-    marginBottom: 22,
+    marginBottom: 42,
   },
   title: {
     fontSize: 22,
