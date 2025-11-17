@@ -6,6 +6,7 @@ import ProfileScreen from '../screens/ProfileScreen';
 import GuideOne from '../screens/GuideOne';
 import GuideTwo from '../screens/GuideTwo';
 import GuideThree from '../screens/GuideThree';
+import StartHomedot from '../screens/StartHomedot';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +40,11 @@ export default function AppNavigator() {
           name="GuideThree" 
           component={GuideThree}
           options={{ title: '가이드03' }}
+        />
+        <Stack.Screen 
+          name="StartHomedot" 
+          component={StartHomedot}
+          options={{ title: '시작하기' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

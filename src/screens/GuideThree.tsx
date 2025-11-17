@@ -23,7 +23,7 @@ export default function GuideThree({ navigation }: any) {
         </Text>
         <NextButton
           title="다음"
-          onPress={() => navigation.navigate('GuideThree')}
+          onPress={() => navigation.navigate('StartHomedot')}
         />
       </View>
     </View>
