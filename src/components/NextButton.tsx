@@ -12,10 +12,10 @@ interface ButtonProps {
   backgroundColor?: string;
 }
 
-export default function Button({
+export default function NextButton({
   title,
   onPress,
-  backgroundColor = '#fff',
+  backgroundColor = '#5470EE',
 }: ButtonProps) {
   return (
     <TouchableOpacity
@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#5470EE',
+    color: '#fff',
   },
 });

@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+import GuideOne from '../screens/GuideOne';
 
 const Stack = createNativeStackNavigator();
 
@@ -11,15 +12,7 @@ export default function AppNavigator() {
     <NavigationContainer>
       <Stack.Navigator
         initialRouteName="Home"
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: '#007AFF',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },
-        }}>
+       >
         <Stack.Screen 
           name="Home" 
           component={HomeScreen}
@@ -29,6 +22,11 @@ export default function AppNavigator() {
           name="Profile" 
           component={ProfileScreen}
           options={{ title: '프로필' }}
+        />
+        <Stack.Screen 
+          name="GuideOne" 
+          component={GuideOne}
+          options={{ title: '가이드01' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

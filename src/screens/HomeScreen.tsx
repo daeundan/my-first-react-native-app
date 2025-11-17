@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import Button from '../components/Button';
 
 export default function HomeScreen({ navigation }: any) {
@@ -7,31 +7,13 @@ export default function HomeScreen({ navigation }: any) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>🏠 홈 화면</Text>
-      <Text style={styles.subtitle}>내 첫 React Native 앱</Text>
-
-      {/* <View style={styles.counterContainer}>
-        <Text style={styles.counterText}>카운터: {count}</Text>
-        <Button 
-          title="+ 증가" 
-          onPress={() => setCount(count + 1)}
-          backgroundColor="#34C759"
-        />
-        <Button 
-          title="- 감소" 
-          onPress={() => setCount(count - 1)}
-          backgroundColor="#FF3B30"
-        />
-        <Button 
-          title="리셋" 
-          onPress={() => setCount(0)}
-          backgroundColor="#8E8E93"
-        />
-      </View> */}
+      <Text style={styles.title}>내 안전 지키미</Text>
+      <Image  source={require('../img/logo.png')}   style={{width: 200, height: 200}}></Image>
+      <Text style={styles.subtitle}>HOMEDOT</Text>
 
       <Button
-        title="프로필로 이동 →"
-        onPress={() => navigation.navigate('Profile')}
+        title="시작하기"
+        onPress={() => navigation.navigate('GuideOne')}
       />
     </View>
   );
@@ -40,38 +22,39 @@ export default function HomeScreen({ navigation }: any) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F2F2F7',
+    backgroundColor: '#556DEF',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
   },
   title: {
-    fontSize: 32,
+    fontSize: 22,
     fontWeight: 'bold',
-    color: '#000',
+    color: '#ffffff',
     marginBottom: 10,
   },
   subtitle: {
-    fontSize: 18,
-    color: '#666',
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#fff',
     marginBottom: 40,
   },
-  counterContainer: {
-    backgroundColor: '#fff',
-    padding: 30,
-    borderRadius: 20,
-    marginBottom: 40,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 5,
-  },
+  // counterContainer: {
+  //   backgroundColor: '#fff',
+  //   padding: 30,
+  //   borderRadius: 20,
+  //   marginBottom: 40,
+  //   shadowColor: '#000',
+  //   shadowOffset: { width: 0, height: 2 },
+  //   shadowOpacity: 0.1,
+  //   shadowRadius: 8,
+  //   elevation: 5,
+  // },
   counterText: {
     fontSize: 24,
     fontWeight: '600',
     textAlign: 'center',
     marginBottom: 20,
-    color: '#007AFF',
+    color: '#01608d',
   },
 });
