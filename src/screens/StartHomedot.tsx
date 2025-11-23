@@ -13,7 +13,7 @@ export default function StartHomedot({ navigation }: any) {
 
       <Button
         title="로그인 하기"
-        onPress={() => navigation.navigate('StartHomedot')}
+        onPress={() => navigation.navigate('Login')}
       />
     </View>
   );
