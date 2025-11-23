@@ -11,8 +11,8 @@ export default function Login({ navigation }: any) {
     console.log('아이디:', id);
     console.log('비밀번호:', pw);
 
-    // 로그인 성공 시 다음 화면 이동도 가능
-    // navigation.navigate('Home');
+
+    navigation.navigate('Home');
   };
 
   return (
@@ -34,7 +34,8 @@ export default function Login({ navigation }: any) {
         value={pw}
         onChangeText={setPw}
         />
-     <Button title="로그인" mode="secondary" onPress={handleLogin} />
+     {/* <Button title="로그인" mode="secondary" onPress={handleLogin} /> */}
+     <Button title="로그인" mode="secondary" onPress={() => navigation.navigate('Main')} />
     </View>
   );
 }

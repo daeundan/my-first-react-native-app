@@ -8,6 +8,7 @@ import GuideTwo from '../screens/GuideTwo';
 import GuideThree from '../screens/GuideThree';
 import StartHomedot from '../screens/StartHomedot';
 import Login from '../screens/Login';
+import Main from '../screens/Main';
 
 const Stack = createNativeStackNavigator();
 
@@ -50,6 +51,10 @@ export default function AppNavigator() {
         <Stack.Screen
         name='Login'
         component={Login}
+        />
+        <Stack.Screen
+        name='Main'
+        component={Main}
         />
       </Stack.Navigator>
     </NavigationContainer>
